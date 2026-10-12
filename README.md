@@ -1,74 +1,76 @@
-# AI Price Trends — Foundation Model Token Economics & Price Index
+# SmartCompare AI — Universal Product Price Comparison & Predictive Engine
 
-> **Live intelligence tracking of input, output, prompt caching, and reasoning token costs across 32+ industry-standard foundation models.**
+A universal, real-time multi-store e-commerce price aggregation, historical trend analysis, and AI purchase forecasting platform.
 
-Normalized per 1,000,000 tokens in USD.
-
----
-
-## Overview
-
-**AI Price Trends** is a comprehensive, production-grade tracking and analytics platform for foundation model API pricing. It indexes real-time rates across OpenAI, Anthropic, Google DeepMind, DeepSeek, Meta, Mistral, xAI, and Alibaba Qwen.
-
-### Key Capabilities
-
-- **Normalized Token Economics**: Standardized pricing comparison across diverse tokenizer encodings (cl100k, o200k, Byte-Pair).
-- **Multi-Metric Views**:
-  - Output Generation Pricing ($/1M)
-  - Input Prompt Ingestion Pricing ($/1M)
-  - Standard Blended 3:1 Input-to-Output Enterprise Ratio
-  - Context Caching & KV Cache Read Rates ($/1M)
-- **Workload TCO Estimator**: Interactive calculator that models monthly and annual token expenditure across multiple configurations, factoring in prompt caching hit ratios.
-- **Dynamic Filtering & Visualizations**:
-  - Filter by architectural class: *Frontier & Flagship*, *Fast & Budget*, *Reasoning Engines*, *Open-Weights*, *Coding Specialists*.
-  - Live horizontal relative distribution chart.
-  - Sort by price, throughput (tokens/second), context window size, or name.
-- **Exporting**: One-click export to CSV and JSON feeds.
-- **Responsive Dark/Light UI**: Adaptive interface with system preference detection and manual toggle.
+Commercially conceptualized as **SmartCompare (PPC Engine)**.
 
 ---
 
-## Foundation Models Covered
+## 🌟 Key Features
 
-| Provider | Models Included |
-| :--- | :--- |
-| **OpenAI** | GPT-5 nano, GPT-5.4 Turbo, GPT-5.4, GPT-5.4 Pro, o3-mini (Reasoning), o3 |
-| **Anthropic** | Claude 3.5 Haiku, Claude 3.7 Sonnet (Hybrid), Claude Sonnet 4.6, Claude Opus 4.6 |
-| **Google** | Gemini 2.5 Flash (1M), Gemini 3.1 Pro (2M), Gemini 3.5 Flash |
-| **DeepSeek** | DeepSeek V3, DeepSeek R1 (Reasoning), DeepSeek V4 Flash |
-| **Meta** | Llama 3.3 70B, Llama 3.1 405B, Llama 3.1 8B Instant |
-| **Mistral** | Mistral Large 3, Codestral 25.01, Mistral Small 3 |
-| **xAI** | Grok 4.6, Grok 3 Mini |
-| **Alibaba Qwen** | Qwen 2.5 Max, Qwen 2.5 Coder 32B, QwQ 32B (Reasoning) |
-| **Zhipu / Moonshot** | GLM-5.3 Flash, Kimi K3 |
+1. **Universal Product Search & Normalization**:
+   - Search **any** commercial product or gadget (Smartphones, Laptops, Audio, Smartwatches, Appliances).
+   - Real-time specification extraction and normalization (Display, Processor, Storage, Camera, Battery, Warranty).
+   - Fast autocomplete suggestions with instant pricing previews.
+
+2. **Cross-Platform Price Comparison (Har Platform me kya price hai)**:
+   - Aggregates and normalizes live prices across India's top retail platforms:
+     - 🟠 **Amazon India**
+     - 🔵 **Flipkart**
+     - 🟢 **Croma**
+     - 🔴 **Reliance Digital**
+     - 🟣 **Vijay Sales**
+   - Highlights 🏆 **BEST PRICE** with accurate savings calculations.
+   - Displays real-time bank discounts, instant card cashback, delivery speed, and direct "Go to Store" links.
+
+3. **Interactive Historical Price Trend Graph**:
+   - Multi-store price fluctuation lines plotted on a responsive Canvas chart.
+   - Switch between **30 Days**, **60 Days**, and **90 Days** historical views.
+   - Real-time stat badges:
+     - **All-Time Lowest Recorded Price**
+     - **All-Time Highest Price**
+     - **Median Retail Baseline Average**
+     - **Current Best Price**
+
+4. **AI Price Prediction Engine (Sasta Hoga ya Mehnga Hoga)**:
+   - **Verdict Advisory**: 🟢 **BUY NOW** vs 🟡 **WAIT & WATCH** vs 🔴 **PRICE HIKE RISK**.
+   - **Confidence Score**: Algorithmic confidence percentage based on time-series analysis and festival discount cycles.
+   - **14-Day Lowest Price Forecast**: Predicts upcoming price floors during flash sales.
+   - **Key Market Signals**: Detects retailer price undercutting wars, inventory depletion, and promotional validity.
+
+5. **Automated Price Drop Alert System**:
+   - Set a custom target threshold price.
+   - Triggers automated notifications via Email or WhatsApp when the price hits the target.
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
-No build step or dependencies required. Open `index.html` in any modern web browser or serve via any static file server:
+Simply open `index.html` in any modern web browser:
 
 ```bash
-# Python static server
-python3 -m http.server 8080
-
-# Or open directly
+# Direct launch
 open index.html
+
+# Or serve via Python
+python3 -m http.server 8080
 ```
 
 ---
 
-## Project Structure
+## 📂 Project Architecture
 
 ```text
-├── index.html        # Semantic dashboard markup & layouts
-├── style.css         # Modern design tokens, responsive CSS & dark/light theme
-├── app.js            # Reactive data store, analytics engine & TCO calculator
-└── README.md         # Documentation & specifications
+├── index.html        # SmartCompare UI layout & semantic DOM structure
+├── style.css         # Modern glassmorphism dark theme, cards & responsive grids
+├── app.js            # Store adapters, search normalizer, Canvas chart & AI predictor
+└── README.md         # Architecture documentation & guide
 ```
 
 ---
 
-## Data Methodology
+## 🛠️ Technology Stack
 
-All pricing telemetry is normalized to **USD per 1,000,000 tokens**. Figures reflect standard commercial pay-as-you-go tiers excluding custom enterprise commits or batch queue discounts.
+- **Frontend**: HTML5, Modern CSS3 (Glassmorphism, Flexbox & Grid), Vanilla JavaScript (ES6+)
+- **Visualization**: High-performance HTML5 Canvas API (Multi-curve bezier interpolation)
+- **Data Engine**: Multi-Store Mock & Live Normalized Aggregation Layer
